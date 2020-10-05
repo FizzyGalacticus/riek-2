@@ -4,8 +4,7 @@ import React from 'react';
 
 import { Container, Row, Col } from 'reactstrap';
 
-import RIEToggle from '../../../lib/RIEToggle';
-import RIEInput from '../../../lib/RIEInput';
+import { RIEToggle, RIEInput, RIETextArea } from '../../../lib';
 
 export default () => (
     <Container>
@@ -35,6 +34,15 @@ export default () => (
                 <h4>Input</h4>
                 <span>Default: </span>
                 <RIEInput defaultValue="Example text value" />
+            </Col>
+        </Row>
+        <hr />
+        <Row>
+            <Col>
+                <h4>Textarea</h4>
+                <span>Default: </span>
+                <br />
+                <RIETextArea defaultValue={'Multiline example\ntext value'} />
             </Col>
         </Row>
     </Container>
