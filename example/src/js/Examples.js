@@ -5,6 +5,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 import RIEToggle from '../../../lib/RIEToggle';
+import RIEInput from '../../../lib/RIEInput';
 
 export default () => (
     <Container>
@@ -26,6 +27,14 @@ export default () => (
                 <br />
                 <span>Custom labels: </span>
                 <RIEToggle textTrue="activated" textFalse="deactivated" />
+            </Col>
+        </Row>
+        <hr />
+        <Row>
+            <Col>
+                <h4>Input</h4>
+                <span>Default: </span>
+                <RIEInput defaultValue="Example text value" />
             </Col>
         </Row>
     </Container>
